@@ -64,6 +64,9 @@ app.post('/multiple', uploader.array('images', 20), (req, res) => {
 		res.status(400).send('Please upload a valid images');
 	}
 });
+app.get('/',function(req,res){
+	res.send('Hello, World!');
+})
 // app.get('/*', function (req, res) {
 // 	res.sendFile(path.join(__dirname, 'build', 'index.html'));
 // });
